@@ -4,5 +4,10 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <h3>Two different links pointing the same way</h3>
+    <a href="@Url.Action("Reverse", "Home")">Go to check if your word is a Palindrome</a>
+    <br />
+    @Html.ActionLink("Go to check if your word is a Palindrome", "Reverse", "Home")
+
 </div>
